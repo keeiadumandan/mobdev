@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good morning, Commuter!"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A1A1A"/>
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📍 Bacolod City"
+                    android:textColor="#2ECC71"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What do you need today?"
+            android:textSize="14sp"
+            android:textColor="#888"
+            android:layout_marginBottom="12dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnFindRoutes"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:text="🗺️ Find Routes"
+                android:backgroundTint="#E8F5E9"
+                android:textColor="#2E7D32"/>
+
+            <Button
+                android:id="@+id/btnCheckFares"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:text="₱ Check Fares"
+                android:backgroundTint="#E3F2FD"
+                android:textColor="#1565C0"/>
+
+            <Button
+                android:id="@+id/btnJeepneyRoutes"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:text="🚌 Jeepney Routes"
+                android:backgroundTint="#FCE4EC"
+                android:textColor="#C62828"/>
+
+            <Button
+                android:id="@+id/btnFareGuide"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:text="📋 Fare Guide"
+                android:backgroundTint="#F3E5F5"
+                android:textColor="#6A1B9A"/>
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Community Updates"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚗 Heavy traffic on EDSA\nReported 5 mins ago, by Anna"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="8dp"
+            android:textColor="#333"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚌 Full jeepney at SM North\nReported 10 mins ago, by Mark"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="8dp"
+            android:textColor="#333"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔄 Route change: Jeepney 10 diverted\nReported 1 hour ago"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:textColor="#333"/>
+
+    </LinearLayout>
+</ScrollView>

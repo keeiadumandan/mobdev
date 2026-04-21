@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.ByaheBuddy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.ByaheBuddy" parent="Base.Theme.ByaheBuddy">
+    </style>
+</resources>

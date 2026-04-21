@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.byahebuddy.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home"
+        xmlns:tools="http://schemas.android.com/tools">
+        <action
+            android:id="@+id/action_home_to_routes"
+            app:destination="@id/routesFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/routesFragment"
+        android:name="com.example.byahebuddy.RoutesFragment"
+        android:label="Routes"
+        tools:layout="@layout/fragment_routes"
+        xmlns:tools="http://schemas.android.com/tools"/>
+
+    <fragment
+        android:id="@+id/toolsFragment"
+        android:name="com.example.byahebuddy.ToolsFragment"
+        android:label="Tools"
+        tools:layout="@layout/fragment_tools"
+        xmlns:tools="http://schemas.android.com/tools"/>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.byahebuddy.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"
+        xmlns:tools="http://schemas.android.com/tools"/>
+
+</navigation>
