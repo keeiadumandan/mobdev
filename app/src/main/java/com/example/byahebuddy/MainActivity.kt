@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
 
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.homeFragment -> loadFragment(HomeFragment())
-                R.id.routesFragment -> loadFragment(RoutesFragment())
-                R.id.toolsFragment -> loadFragment(ToolsFragment())
+                R.id.homeFragment    -> loadFragment(HomeFragment())
+                R.id.routesFragment  -> loadFragment(RoutesFragment())
+                R.id.toolsFragment   -> loadFragment(ToolsFragment())
                 R.id.profileFragment -> loadFragment(ProfileFragment())
             }
             true
